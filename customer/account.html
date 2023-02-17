@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+     <!--Стили карты-->
+    <link rel="stylesheet" href="map-set/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <!--Стили иконок-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div>
+            
+            
+        </div>
+        <div id="main">
+            <div class="logo">Аккаунт</div>
+            <div class="cl-sr">
+                <div class="wrap">
+                    <form>
+                        <input type="text" class="input" placeholder="Поиск">
+                    </form>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class = "notification">
+                      <a href = "#">
+                      <div class = "notBtn" href = "#">
+                        <div class = "number">1</div>
+                         <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+                          <div class = "box">
+                            <div class = "display">
+                              <div class = "nothing"> 
+                                <i class="fas fa-child stick"></i> 
+                              </div>
+                              <div class = "cont">
+                                 <div class = "sec new">
+                                  <!--Здесь будут уведомления--><h1>Оплата</h1>
+                                </div> 
+                                <div class = "sec new">
+                                  <!--Здесь будут уведомления--><h1>Парковка</h1>
+                                </div>
+                             </div>
+                            </div>
+                         </div>
+                      </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cl-os">
+                        <div class="sat-1 cl-sat">
+                            <p class="prof">Мой профиль</p>
+                            <div class="fio">Мирзоев Курбон <br><tet>99 999 99 99</tet></div>
+                            <button class="call" onclick="if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location.href='tel:+1-555-555-5555'; } else { alert('Вы можете связаться с поддержкой по номеру: +992-500-50-50-50'); }">Связаться с поддержкой</button><!--Если это телефон, он перенаправляет на звонок, если нет, то получаем уведомление по какому номеру можно связаться с нами-->
+                            <form action="../index.html" method="post">
+                              <button type="submit" class="logout">Выйти</button>
+                            </form>
+                            <a href="#" class="politic">Правила пользования сервисом</a>
+                        </div>
+                        <div class="sat-1">
+                            <p class="prof">Автомобили</p>
+                             <div id="car-list"></div>
+                            <button id="add-car-btn" class="add-btn">Добавить</button>
+
+                            <div id="add-car-modal" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form id="car-form">
+                                  <label class="cl-lb">Введите машину</label><br>
+                                  <label for="photo">
+                                      <img src="images/add.svg" alt="Add Photo">
+                                  </label>
+                                  <input type="file" id="photo" accept="image/*"  style="display: none;">
+                                  <br>
+                                  <label class="ca-nm" for="number">Номер машины:</label><br>
+                                  <input type="text" placeholder="0000*" id="number" maxlength="4" required>
+                                  <input type="text" placeholder="XX*" id="letters" maxlength="2" required>
+                                  <input type="text" placeholder="00*" id="digits" maxlength="2" required>
+                                  <br>
+                                  <label class="ca-nm" for="passport">Серия техпаспорта:</label><br>
+                                  <input type="text" placeholder="0000*" id="passport" required>
+                                  <br>
+                                  <button class="en-bn" type="submit">Завершить</button>
+                                </form>
+                              </div>
+                            </div>
+
+                           
+                        </div>
+                        <div class="sat-1">
+                            <p class="prof">Мои карты</p>
+                            
+                        </div>
+                    </div>
+        
+    
+    
+    
+        <div id="footer">
+            <div id="footer-menu">
+                <ul>
+                  <li><a href="index.html">Parking</a></li>
+                  <li><a href="power.html">Power</a></li>
+                  <li><a href="shtraf.html">Штрафы</a></li>
+                  <li><a href="history.html">История</a></li>
+                  <li><a class="active-nav" href="account.html">Профиль</a></li>
+                </ul>
+            </div>
+        </div>
+    <!--Плагины для карты-->
+    <script src="js/map-set/leaflet.js"></script>
+    <script src="js/map-set/leaflet-src.esm.js"></script>
+    <script src="js/map-set/leaflet-src.esm.js.map"></script>
+    <script src="js/map-set/leaflet-src.js"></script>
+    <script src="js/map-set/leaflet-src.js.map"></script>
+    <script src="js/map-set/leaflet.js.map"></script>
+    <script src="js/map-set/"></script>
+    <!--Плагины-->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <!--Скрипты-->
+    <script src="js/script.js"></script>
+    <!--Координаты для Parking-->
+    <script src="js/power.js"></script>
+    <!--Динамические влкдаки-->
+    <script type="text/javascript" src="js/pill.js"></script>
+    <script src="js/add-car-number.js"></script>
+    <script src="js/add-card.js"></script>
+</body>
+</html>
