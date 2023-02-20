@@ -67,8 +67,35 @@ for (var i = 0; i < parkingData.length; i++) {
       fillColor: '#3388ff',
       fillOpacity: 0.3,
       color: '#3388ff',
-      weight: 7
+      weight: 10
   }).bindPopup(polygonContent);
 
   var group = L.layerGroup([marker, polygon]).addTo(map);
 }
+/*Добавляем поиск по местонахождению*/
+// Создаем объект иконки
+var customIcon = L.icon({
+  iconUrl: 'icon/YourPasition.svg',
+  iconSize: [38, 38],
+  iconAnchor: [19, 19],
+  popupAnchor: [0, -19]
+});
+
+// Локализация
+map.locate({setView: true, maxZoom: 16});
+
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    // Используем созданную иконку
+    L.marker(e.latlng, {icon: customIcon}).addTo(map)
+        .bindPopup("Вы находитесь в " + radius + " метров от этой точки").openPopup();
+}
+
+map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+    alert(e.message);
+}
+
+map.on('locationerror', onLocationError);
