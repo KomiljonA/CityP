@@ -7434,7 +7434,7 @@
 
   	options: {
   		iconUrl:       'marker-icon.png',
-  		iconRetinaUrl: 'marker-icon-2x.png',
+  		iconRetinaUrl: 'marker-icon-2x.svg',
   		shadowUrl:     'marker-shadow.png',
   		iconSize:    [25, 41],
   		iconAnchor:  [12, 41],

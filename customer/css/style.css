@@ -140,7 +140,7 @@ input::placeholder {
 #footer-menu {
     position: relative;
 	z-index: 1; /* z-index должен быть больше, чем у Google Maps */
-	width: 458px;
+	width: 462px;
 	margin: 60px auto 0;
 	padding: 10px;
 	background: black;
