@@ -35,6 +35,7 @@ for (var i = 0; i < parkingData.length; i++) {
     '<div class="parking-info__subtitle">ул. Абая 92</div>' +
     '<div class="parking-info__time">Время работы: круглосуточно</div>' +
     '<div class="parking-info__rate">Стоимость: 3 сом./час</div>' +
+    '<button>Оплатить</button>' +
   '</div>';
 
   var marker = L.marker(parkingData[i].coordinates, {icon: greenIcon}).bindPopup(polygonContent);

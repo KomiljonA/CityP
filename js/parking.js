@@ -40,7 +40,7 @@ var parkingData = [  {    coordinates: [38.56300, 68.79647],
     {
     coordinates: [38.56202, 68.79443],
     polygonCoordinates: [
-      [38.56105, 68.79457],
+      [38.56075, 68.79461],
       [38.55794, 68.79488]
     ]
   },
@@ -64,10 +64,11 @@ for (var i = 0; i < parkingData.length; i++) {
   var marker = L.marker(parkingData[i].coordinates, {icon: greenIcon}).bindPopup(polygonContent);
 
   var polygon = L.polygon(parkingData[i].polygonCoordinates, {
-      fillColor: '#3388ff',
-      fillOpacity: 0.3,
-      color: '#3388ff',
-      weight: 8
+      fillColor: '#0A66E6',
+      fillOpacity: 0.6,
+      color: '#0A66E6',
+      opacity: 0.6,
+      weight: 9
   }).bindPopup(polygonContent);
 
   var group = L.layerGroup([marker, polygon]).addTo(map);

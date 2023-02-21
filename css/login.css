@@ -7,7 +7,7 @@
 
 /* Обычный */
 @font-face {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	src: local('Inter'),
 		url('../ai/inter/Inter-Regular.ttf') format('ttf'),
 }
@@ -250,7 +250,7 @@ input {
 
 .ttt{
     margin-top: 14em;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 22px;
@@ -267,7 +267,7 @@ color: #FFFFFF;
 }
 
 .fff{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 11px;
