@@ -347,3 +347,125 @@ li a:hover:not(.active) {
     border-radius: 8px;
     color: #fff;
 }
+
+
+@media (max-width: 768px)  {
+  #main {
+        width: 80%;
+        min-width: unset;
+        margin: 40px auto 0;
+        padding: 10px;
+        height: unset;
+  }
+  
+  .logo {
+        font-size: 24px;
+  }
+  
+  .wrap {
+        right: 70px;
+        height: 50px;
+    }
+  
+    #footer-menu {
+        width: 65%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 22px;
+        height: unset;
+        display: flex;
+        justify-content: center;
+    }   
+    .active{
+        width:  170px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    
+    .leaflet-popup-content-wrapper{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 615px) {
+  #main {
+        width: 90%;
+        min-width: unset;
+        margin: 40px auto 0;
+        padding: 10px;
+        height: unset;
+  }
+  
+  .logo {
+        font-size: 32px;
+  }
+  
+  .wrap {
+        right: 70px;
+        height: 50px;
+    }
+
+    #footer-menu {
+        width: 65%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 22px;
+        height: unset;
+        display: flex;
+        justify-content: center;
+    }   
+    .active{
+        width:  170px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    
+    .leaflet-popup-content-wrapper{
+        font-size: 1.8em;
+    }
+    li a{
+        padding: 10px 16px;
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 470px) {
+    li a{
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 370px) {
+    li a{
+        padding: 10px 6px;
+        font-size: 15px;
+    }
+    .logo {
+    font-size: 24px;
+}
+}
+
+@media (max-width: 940px) {
+    .cl-os {
+        grid-template-columns: 49% 49%;   
+    }
+}
+
+@media (max-width: 660px) {
+    .cl-os {
+        grid-template-columns: 100%;   
+    }
+    .overlay-container{
+        display: none;
+    }
+    .sign-in-container{
+        width: 100%;
+    }
+    
+}
+
+
+

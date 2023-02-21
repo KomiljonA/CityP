@@ -932,7 +932,7 @@ tet{
     }
 }*/
 
-@media (max-width: 768px) {
+@media (max-width: 768px)  {
   #main {
         width: 80%;
         min-width: unset;
@@ -987,9 +987,7 @@ tet{
         right: 70px;
         height: 50px;
     }
-    #footer{
-        margin-bottom: 10px;
-    }
+
     #footer-menu {
         width: 95%;
         margin: 0 auto;
@@ -1011,16 +1009,14 @@ tet{
     li a{
         padding: 10px 8px;
         font-size: 19px;
-        letter-spacing: -0.5px;
     }
     
 }
 
 @media (max-width: 470px) {
     li a{
-        padding: 10px 6px;
+        padding: 10px 5px;
         font-size: 16px;
-        letter-spacing: -0.5px;
     }
     
 }
@@ -1028,14 +1024,27 @@ tet{
 @media (max-width: 370px) {
     li a{
         padding: 10px 4px;
-        font-size: 14px;
-        letter-spacing: -0.7px;
+        font-size: 13px;
     }
     .logo {
     font-size: 24px;
 }
 }
-.leaflet-top leaflet-left{
-    display: none;
+
+@media (max-width: 940px) {
+    .cl-os {
+        grid-template-columns: 49% 49%;   
+    }
 }
+
+@media (max-width: 660px) {
+    .cl-os {
+        grid-template-columns: 100%;   
+    }
+}
+
+
+
+
+
 
