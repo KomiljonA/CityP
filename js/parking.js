@@ -67,7 +67,7 @@ for (var i = 0; i < parkingData.length; i++) {
       fillColor: '#3388ff',
       fillOpacity: 0.3,
       color: '#3388ff',
-      weight: 10
+      weight: 8
   }).bindPopup(polygonContent);
 
   var group = L.layerGroup([marker, polygon]).addTo(map);
