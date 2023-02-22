@@ -387,6 +387,131 @@ li a:hover:not(.active) {
     }
 }
 
+
+.satpp txt{
+    color: #A0AEC0;
+    font-size: 16px;
+}
+
+/* стили для попапов */
+.popup {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  z-index: 10000;
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+}
+
+.popup.active {
+  right: 0;
+}
+
+.popup h2 {
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.popup p {
+  margin: 0;
+  padding: 20px;
+  padding-right: 0;
+}
+
+.popup button.close-popup {
+    display: initial;
+    cursor: pointer;
+    border: 1px solid #718096;
+    border-radius: 40px;
+    color: #718096;
+    float: right;
+    margin-top: 4px;
+    transform: rotate(45deg);
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.fa-credit-card{
+    padding: 0px;
+    margin: 0;
+    color: #0A66E6;
+    padding-right: 12px;
+}
+
+.fa-car{
+    padding: 0px;
+    margin: 0;
+    color: #0A66E6;
+    padding-right: 12px;
+}
+
+.fa-bolt{
+    padding: 0px;
+    margin: 0;
+    color: #0A66E6;
+    padding-right: 12px;
+}
+
+.satpp{
+     color: #1A202C;
+    background: #fff;
+    border-radius: 12px;
+    font-size: 150%;
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    display: grid;
+    grid-gap: 16px;
+}
+
+.cl-tt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    width: 100%;
+    height: 22px;
+    background: #FAFAFA;
+    border-radius: 6px;
+}
+.lpo{
+    color: #1A202C;
+    font-weight: 600;
+}
+
+.popup p.pop{
+    padding: 0;
+}
+
+.but22 button.pob{
+    width: 100%;
+}
+
+.but22 button.opla:last-child{
+    background-color: #52bb5e;
+}
+
+/**/
+.satpp p.pop{
+    margin: 0;
+    padding: 0;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    width: 308px;
+}
+    
+/**/
+
+
 @media (max-width: 615px) {
   #main {
         width: 90%;
