@@ -111,7 +111,6 @@ body {
 
  .active{
   width: 250px;
-  padding-left: 25px;
   transition: all 0.5s ease;
 }
 
@@ -899,6 +898,7 @@ tet{
 .popup p {
   margin: 0;
   padding: 20px;
+  padding-right: 0;
 }
 
 .popup button.close-popup {
@@ -915,28 +915,32 @@ tet{
     height: 20px;
 }
 
-.fa{
+.fa-credit-card{
     padding: 0px;
     margin: 0;
-    padding-left: 12px;
     color: #0A66E6;
+    padding-right: 12px;
 }
 
-/**/
-/*@media only screen and (max-width: 879px){
-    #main{
-        width: 75%;
-        height: 54px;
-    }
-    .logo{
-        font-size: 32px;
-    }
-    #footer-menu{
-        width: 615px;
-        height: 55px;
-        font-size: 24px;
-    }
-}*/
+.fa-car{
+    padding: 0px;
+    margin: 0;
+    color: #0A66E6;
+    padding-right: 12px;
+}
+
+
+.popup p.pop{
+    padding: 0;
+}
+
+.but22 button.pob{
+    width: 100%;
+}
+
+.but22 button.opla:last-child{
+    background-color: #52bb5e;
+}
 
 @media (max-width: 768px)  {
   #main {
@@ -966,8 +970,7 @@ tet{
         justify-content: center;
     }   
     .active{
-        width:  170px;
-        padding-left: 15px;
+        width:  300px;
         font-size: 16px;
     }
     
@@ -1004,8 +1007,7 @@ tet{
         justify-content: center;
     }   
     .active{
-        width:  170px;
-        padding-left: 15px;
+        width:  290px;
         font-size: 16px;
     }
     
