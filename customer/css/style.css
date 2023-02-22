@@ -915,6 +915,12 @@ tet{
     height: 20px;
 }
 
+.fa{
+    padding: 0px;
+    margin: 0;
+    padding-left: 12px;
+    color: #0A66E6;
+}
 
 /**/
 /*@media only screen and (max-width: 879px){
