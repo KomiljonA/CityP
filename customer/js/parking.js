@@ -4,7 +4,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 var greenIcon = L.icon({
-    iconUrl: '../customer/icon/cp.svg',
+    iconUrl: 'icon/cp.svg',
     iconSize: [40, 40],
     popupAnchor: [0, -25]
 });
