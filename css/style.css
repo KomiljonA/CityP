@@ -2,14 +2,13 @@
 /* Жирный */
 @font-face {
 	font-family: 'Inter bold'; 
-	src: url(../ai/inter/Inter-Bold.ttf); 
+	src: url(../customer/ai/inter/Inter-Bold.ttf); 
 }
-
 /* Обычный */
 @font-face {
 	font-family: 'Inter', sans-serif;
 	src: local('Inter'),
-		url('../ai/inter/Inter-Regular.ttf') format('ttf'),
+		url('../customer/ai/inter/Inter-Regular.ttf') format('ttf'),
 }
 
 
