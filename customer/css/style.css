@@ -3,18 +3,20 @@
 @font-face {
 	font-family: 'Inter bold'; 
 	src: url(../ai/inter/Inter-Bold.ttf); 
+    
 }
 /* Обычный */
 @font-face {
 	font-family: 'Inter', sans-serif;
 	src: local('Inter'),
-		url('../ai/inter/Inter-Regular.ttf') format('ttf'),
+		url('../ai/inter/Inter-Regular.ttf') format('ttf');
 }
 
 
 body {
 	font-family: 'Inter', sans-serif;
     background: #E5E5E5;
+    font-display: swap;
 }
 
 /*карта как фон*/
