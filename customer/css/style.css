@@ -140,7 +140,7 @@ input::placeholder {
 #footer-menu {
     position: relative;
 	z-index: 1; /* z-index должен быть больше, чем у Google Maps */
-	width: 462px;
+	width: 572px;
 	margin: 60px auto 0;
 	padding: 10px;
 	background: black;
@@ -997,22 +997,23 @@ tet{
     }
   
     #footer-menu {
-        width: 95%;
+        width: 97%;
         margin: 0 auto;
         padding: 10px;
-        font-size: 22px;
+        font-size: 16px;
         height: unset;
         display: flex;
         justify-content: center;
     }   
     .active{
-        width:  300px;
+        width:  200px;
         font-size: 16px;
     }
     
     .leaflet-popup-content-wrapper{
         font-size: 1.5em;
     }
+    
 }
 
 @media (max-width: 615px) {
@@ -1037,13 +1038,13 @@ tet{
         width: 95%;
         margin: 0 auto;
         padding: 10px;
-        font-size: 22px;
+        font-size: 12px;
         height: unset;
         display: flex;
         justify-content: center;
     }   
     .active{
-        width:  290px;
+        width:  80px;
         font-size: 16px;
     }
     
@@ -1052,7 +1053,7 @@ tet{
     }
     li a{
         padding: 10px 8px;
-        font-size: 19px;
+        font-size: 14px;
     }
     
 }
@@ -1060,7 +1061,7 @@ tet{
 @media (max-width: 470px) {
     li a{
         padding: 10px 5px;
-        font-size: 16px;
+        font-size: 12px;
     }
     
 }
@@ -1068,7 +1069,7 @@ tet{
 @media (max-width: 370px) {
     li a{
         padding: 10px 4px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .logo {
     font-size: 24px;
