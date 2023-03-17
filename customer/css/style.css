@@ -80,7 +80,7 @@ body {
   right: 70px;
   transform: translateY(-50%);
   width: 0px;
-  height: 55px;
+  height: 48px;
   background: #fafafa;
   line-height: 55px;
   padding-right: 55px;
@@ -105,7 +105,7 @@ body {
   color: ##1A202C;
   position: absolute;
   right: 17px;
-  top: 15px;
+  top: 13px;
   font-size: 22px;
   cursor: pointer;
 }

@@ -14,7 +14,7 @@
                 <h1>Войти</h1>
                 <span>Парковки и зарядные станции Душанбе</span>
                 <input type="tel" name="tel" pattern="[0-9]{9}" required placeholder="Номер телефона*">
-                <button type="submit" class="but"><a href="customer/index.html" class="but">Получить код</a></button>
+                <button type="submit" class="but"><a href="customer/index.php" class="but">Получить код</a></button>
             </form>
         </div>
         <div class="overlay-container">

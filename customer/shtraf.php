@@ -1,53 +1,15 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <title>Главная</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-     <!--Стили карты-->
-    <link rel="stylesheet" href="map-set/leaflet.css" />
-    <!--Стили иконок-->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+<?php
+$pageTitle = "Штрафы";
+require'template/header.php';
+?>
 <body>
         <div>
         </div>
-        <div id="main">
-            <div class="logo">Штраф</div>
-            <div class="cl-sr">
-                <div class="wrap">
-                    <form>
-                        <input type="text" class="input" placeholder="Поиск">
-                    </form>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class = "notification">
-                      <a href = "#">
-                      <div class = "notBtn" href = "#">
-                        <div class = "number">1</div>
-                         <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
-                          <div class = "box">
-                            <div class = "display">
-                              <div class = "nothing"> 
-                                <i class="fas fa-child stick"></i> 
-                              </div>
-                              <div class = "cont">
-                                 <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Оплата</h1>
-                                </div> 
-                                <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Парковка</h1>
-                                </div>
-                             </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    
+    <!--Добавляем верзнее меню-->
+    <?php 
+    $pageName = "Штрафы";
+    require 'template/main.php';
+    ?>  
             
             <div id="col-ss">
                 <div class="col-sr">
@@ -72,7 +34,7 @@
                 <div class="main_content hidden" id="tab-1">
                     <div class="cl-os">
                        <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -93,7 +55,7 @@
                         </div>
 
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -113,7 +75,7 @@
                             <p class="plo">10 февраля 2023 в 18:30</p>
                         </div>
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -133,7 +95,7 @@
                             <p class="plo">10 февраля 2023 в 18:30</p>
                         </div>
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -160,7 +122,7 @@
                             <div class="popup" id="popup-1">
                                 <h2>Штраф<button class="close-popup">+</button></h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -182,7 +144,7 @@
                             <div class="popup" id="popup-2">
                                 <h2><button class="close-popup">+</button>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -203,7 +165,7 @@
                             <div class="popup" id="popup-3">
                                <h2><button class="close-popup">+</button>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -224,7 +186,7 @@
                             <div class="popup" id="popup-4">
                                 <h2><button class="close-popup">+</button>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -253,7 +215,7 @@
                 <div class="main_content hidden" id="tab-2">
                     <div class="cl-os">
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -273,7 +235,7 @@
                             <p class="plo">10 февраля 2023 в 18:30</p>
                         </div>
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -293,7 +255,7 @@
                             <p class="plo">10 февраля 2023 в 18:30</p>
                         </div>
                         <div class="sat-1">
-                            <p>Оплата за парковку <br><txt class="2en">ул. Ленина, 5</txt></p>
+                            <p>Парковка в неотложенном месте <br><txt class="2en">ул. Ленина, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -318,7 +280,7 @@
                             <div class="popup" id="popup-11">
                                 <h2>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                 <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -340,7 +302,7 @@
                             <div class="popup" id="popup-12">
                                 <h2>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -361,7 +323,7 @@
                             <div class="popup" id="popup-13">
                                 <h2>Штраф</h2>
                                 <div class="sat-1">
-                            <p class="pop">Оплата за парковку <br><txt class="2en">ул. 332, 5</txt></p>
+                            <p class="pop">Парковка в неотложенном месте <br><txt class="2en">ул. 332, 5</txt></p>
                             <div class="cl-tt">
                                <p class="opl">
                                     <i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -391,25 +353,7 @@
     
     
     
-        <div id="footer">
-            <div id="footer-menu">
-                <ul>
-                  <li><a href="index.html">Parking</a></li>
-                  <li><a href="power.html">Power</a></li>
-                  <li><a class="active-nav" href="expectation.html">Ожидание</a></li>
-                  <li><a href="shtraf.html">Штрафы</a></li>
-                  <li><a href="history.html">История</a></li>
-                  <li><a href="account.html">Профиль</a></li>
-                </ul>
-            </div>
-        </div>
-    <!--Плагины-->
-    <script src='js/jquery.js'></script>
-    <!--Скрипты-->
-    <script src="js/script.js"></script>
-    <!--Координаты для Parking-->
-    <script src="js/power.js"></script>
-    <!--Динамические влкдаки-->
-    <script type="text/javascript" src="js/pill.js"></script>
+    <!--Добавляем Footer-->
+    <?php require 'template/footer.php'?>
 </body>
 </html>

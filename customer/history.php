@@ -1,52 +1,13 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <title>Главная</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-     <!--Стили карты-->
-    <link rel="stylesheet" href="map-set/leaflet.css" />
-    <!--Стили иконок-->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+<?php
+$pageTitle = "История";
+require'template/header.php';
+?>
 <body>
-        <div id="main">
-            <div class="logo">История</div>
-            <div class="cl-sr">
-                <div class="wrap">
-                    <form>
-                        <input type="text" class="input" placeholder="Поиск">
-                    </form>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class = "notification">
-                      <a href = "#">
-                      <div class = "notBtn" href = "#">
-                        <div class = "number">1</div>
-                         <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
-                          <div class = "box">
-                            <div class = "display">
-                              <div class = "nothing"> 
-                                <i class="fas fa-child stick"></i> 
-                              </div>
-                              <div class = "cont">
-                                 <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Оплата</h1>
-                                </div> 
-                                <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Парковка</h1>
-                                </div>
-                             </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-            
-    
+    <!--Добавляем верзнее меню-->
+    <?php 
+    $pageName = "История";
+    require 'template/main.php';
+    ?>  
     
         <!--<div class="park">
             <p class="cl-pp">Вы припаркованы</p>
@@ -92,7 +53,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -105,7 +66,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -118,7 +79,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -131,7 +92,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -144,7 +105,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -157,7 +118,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -170,7 +131,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -183,7 +144,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                               <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -196,7 +157,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -209,7 +170,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -231,7 +192,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -244,7 +205,7 @@
                         <div class="sat-1">
                             <p>Парковка в неотложенном месте <br><txt class="2en">ул. Мирзо Турсунзаде, 18/6</txt></p>
                             <div class="cl-tt">
-                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Потрачено</p>
+                                <p class="opl"><i class="fa fa-credit-card" aria-hidden="true"></i>Оплачено</p>
                                 <p class="lpo">2 сом</p>
                             </div>
                             <div class="cl-tt">
@@ -266,25 +227,7 @@
             
             
             
-        <div id="footer">
-            <div id="footer-menu">
-                <ul>
-                  <li><a href="index.html">Parking</a></li>
-                  <li><a href="power.html">Power</a></li>
-                  <li><a href="expectation.html">Ожидание</a></li>
-                  <li><a href="shtraf.html">Штрафы</a></li>
-                  <li><a class="active-nav" href="history.html">История</a></li>
-                  <li><a href="account.html">Профиль</a></li>
-                </ul>
-            </div>
-        </div>
-    <!--Плагины-->
-    <script src='js/jquery.js'></script>
-    <!--Скрипты-->
-    <script src="js/script.js"></script>
-    <!--Координаты для Parking-->
-    <script src="js/power.js"></script>
-    <!--Динамические влкдаки-->
-    <script type="text/javascript" src="js/pill.js"></script>
+    <!--Добавляем Footer-->
+    <?php require 'template/footer.php'?>
 </body>
 </html>
