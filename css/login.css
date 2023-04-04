@@ -93,14 +93,14 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
-    gap: 16px;
+    gap: 10px;
 }
 
 input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
-	margin: 0px 0;
+	margin: 8px 0;
 	width: 100%;
     border-radius: 8px;
 }
@@ -127,23 +127,6 @@ input {
 	left: 0;
 	width: 50%;
 	z-index: 2;
-}
-
-.cre{
-    display: flex;
-    justify-content: center;
-    align-self: left;
-    align-items: center;
-    height: 20px;
-}
-
-.log{
-    color: #0A66E6;
-    padding-left: 6px;
-}
-
-.log:hover{
-    color: #1A202C;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -253,56 +236,6 @@ input {
 	width: 40px;
 }
 
-.signup-heading{
-    font-size: 26px;
-    font-weight: 600;
-}
-
-.error-msg{
-    color: #ff1a1a;
-}
-
-.row{
-    width: 100%;
-}
-
-#signup-btn{
-    background: #0A66E6;
-    color: white;
-    font-size: 16px;
-}
-#signup-btn:hover{
-    background: #6297e1;
-}
-#signup-btn:active{
-    background: #b9cae1;
-}
-
-.input-box-330{
-    height: 42px;
-}
-.error-field {
-  border-color: #f00;
-}
-
-
-.login-signup{
-    font-size: 14px;
-}
-
-.login-signup a{
-    font-size: 14px;
-    color: #0A66E6;
-}
-
-/**/
-#login-btn.btn{
-    background: #0A66E6;
-    color: #fff;
-    font-size: 16px;
-}
-
-
 
 .bac{
     z-index: 0;
@@ -375,4 +308,3 @@ opacity: 0.7;
     }
     
 }
-
