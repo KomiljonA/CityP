@@ -1,61 +1,51 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <title>Главная</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-     <!--Стили карты-->
-    <link rel="stylesheet" href="map-set/leaflet.css" />
-    <!--Стили иконок-->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+<?php
+
+session_start();
+if (isset($_SESSION["username"])) {
+    $username = $_SESSION["username"];
+    session_write_close();
+} else {
+    // since the username is not set in session, the user is not-logged-in
+    // he is trying to access this page unauthorized
+    // so let's clear all session variables and redirect him to index
+    session_unset();
+    session_write_close();
+    $url = "../login.php";
+    header("Location: $url");
+}
+session_start();
+if (isset($_SESSION["email"])) {
+    $email = $_SESSION["email"];
+    session_write_close();
+} else {
+    // since the username is not set in session, the user is not-logged-in
+    // he is trying to access this page unauthorized
+    // so let's clear all session variables and redirect him to index
+    session_unset();
+    session_write_close();
+    $url = "../login.php";
+    header("Location: $url");
+}
+
+
+$pageTitle = "Аккаунт";
+require'template/header.php';
+?>
 <body>
-        <div>
+    <!--Добавляем верзнее меню-->
+    <?php 
+    $pageName = "Аккаунт";
+    require 'template/main.php';
+    ?>  
+       
             
             
-        </div>
-        <div id="main">
-            <div class="logo">Аккаунт</div>
-            <div class="cl-sr">
-                <div class="wrap">
-                    <form>
-                        <input type="text" class="input" placeholder="Поиск">
-                    </form>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class = "notification">
-                      <a href = "#">
-                      <div class = "notBtn" href = "#">
-                        <div class = "number">1</div>
-                         <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
-                          <div class = "box">
-                            <div class = "display">
-                              <div class = "nothing"> 
-                                <i class="fas fa-child stick"></i> 
-                              </div>
-                              <div class = "cont">
-                                 <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Оплата</h1>
-                                </div> 
-                                <div class = "sec new">
-                                  <!--Здесь будут уведомления--><h1>Парковка</h1>
-                                </div>
-                             </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="cl-os">
+              <div class="cl-os">
                         <div class="sat-1 cl-sat">
                             <p class="prof">Мой профиль</p>
-                            <div class="fio">Мирзоев Курбон <br><tet>99 999 99 99</tet></div>
+                            <div class="fio"><?php echo $username;?> <br><tet><?php echo $_SESSION['email'];?>  </tet></div>
                             <button class="call" onclick="if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location.href='tel:+1-555-555-5555'; } else { alert('Вы можете связаться с поддержкой по номеру: +992-500-50-50-50'); }">Связаться с поддержкой</button><!--Если это телефон, он перенаправляет на звонок, если нет, то получаем уведомление по какому номеру можно связаться с нами-->
-                            <form action="../index.html" method="post">
+                            <form action="logout.php" method="post">
                               <button type="submit" class="logout">Выйти</button>
                             </form>
                             <a href="#" class="politic">Правила пользования сервисом</a>
@@ -96,31 +86,12 @@
                             
                         </div>
                     </div>
-        
-    
-    
-    
-        <div id="footer">
-            <div id="footer-menu">
-                <ul>
-                  <li><a href="index.html">Parking</a></li>
-                  <li><a href="power.html">Power</a></li>
-                  <li><a href="expectation.html">Ожидание</a></li>
-                  <li><a href="shtraf.html">Штрафы</a></li>
-                  <li><a href="history.html">История</a></li>
-                  <li><a class="active-nav" href="account.html">Профиль</a></li>
-                </ul>
-            </div>
-        </div>
-    <!--Плагины-->
-    <script src='js/jquery.js'></script>
-    <!--Скрипты-->
-    <script src="js/script.js"></script>
-    <!--Координаты для Parking-->
-    <script src="js/power.js"></script>
-    <!--Динамические влкдаки-->
-    <script type="text/javascript" src="js/pill.js"></script>
-    <script src="js/add-car-number.js"></script>
-    <script src="js/add-card.js"></script>
+            
+            
+            
+            
+            
+    <!--Добавляем Footer-->
+    <?php require 'template/footer.php'?>
 </body>
 </html>
