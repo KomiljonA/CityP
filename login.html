@@ -14,7 +14,7 @@
                 <h1>Войти</h1>
                 <span>Парковки и зарядные станции Душанбе</span>
                 <input type="tel" name="tel" pattern="[0-9]{9}" required placeholder="Номер телефона*">
-                <input type="tel" name="number_telefona" placeholder="Введите номер телефона" inputmode="numeric" maxlength="9" pattern="[0-9]{9}" required value="<?php if (isset($_SESSION['number_telefona'])) echo $_SESSION['number_telefona']; ?>" class="py-4 px-2 mt-2 form-control large" title="9 цифр">
+                <input type="tel" name="number_telefona" placeholder="Введите номер телефона" inputmode="numeric" maxlength="9" pattern="[0-9]{9}" required value="" class="py-4 px-2 mt-2 form-control large" title="9 цифр">
                 <button type="submit" class="but"><a href="customer/index.html" class="but">Получить код</a></button>
             </form>
         </div>
